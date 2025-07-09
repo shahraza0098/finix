@@ -6,7 +6,7 @@ export default function Header() {
         <div className="text-xl font-bold">🌐</div>
 
         <nav className="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="#" className="hover:text-indigo-400">Product</a>
+          <a href="#" className="hover:text-indigo-400">About</a>
           <a href="#" className="hover:text-indigo-400">Features</a>
           <a href="#" className="hover:text-indigo-400">Marketplace</a>
           <a href="#" className="hover:text-indigo-400">Company</a>
