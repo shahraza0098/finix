@@ -5,7 +5,7 @@ import { BackgroundBeams } from "@/components/UI/BackgroundBeams";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden isolate flex items-center justify-center min-h-screen bg-black text-white">
+    <section className="relative overflow-hidden isolate flex items-center justify-center min-h-screen  text-white">
       {/* Animated Beams Background */}
       <BackgroundBeams className="z-0" />
 

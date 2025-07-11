@@ -1,4 +1,5 @@
 // src/components/Features.tsx
+
 const features = [
   {
     title: "Buy & Sell Shares",
@@ -16,16 +17,23 @@ const features = [
 
 export default function Features() {
   return (
-    <section className="py-20 bg-white">
-      <div className="max-w-7xl mx-auto px-4">
-        <h3 className="text-3xl font-semibold text-center text-gray-800 mb-12">
+    <section className="py-24 bg-gradient-to-br ">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <h3 className="text-4xl font-extrabold text-white mb-16 leading-tight">
           Platform Highlights
         </h3>
-        <div className="grid gap-8 md:grid-cols-3">
+
+        <div className="grid gap-10 md:grid-cols-3">
           {features.map((feature, index) => (
-            <div key={index} className="bg-blue-50 p-6 rounded-lg shadow hover:shadow-md transition">
-              <h4 className="text-xl font-bold mb-2 text-blue-600">{feature.title}</h4>
-              <p className="text-gray-600">{feature.desc}</p>
+            <div
+              key={index}
+              className="bg-white/70 backdrop-blur-sm border border-gray-200 shadow-lg rounded-2xl p-8 transition transform hover:scale-[1.02] hover:shadow-xl"
+            >
+              <div className="flex items-center justify-center w-12 h-12 mb-4 rounded-full bg-blue-100 text-blue-600 font-bold text-lg">
+                {index + 1}
+              </div>
+              <h4 className="text-2xl font-semibold text-gray-800 mb-3">{feature.title}</h4>
+              <p className="text-gray-600 leading-relaxed">{feature.desc}</p>
             </div>
           ))}
         </div>
