@@ -1,4 +1,6 @@
 // src/components/Header.tsx
+
+import { UserButton } from '@clerk/nextjs'
 export default function Header() {
   return (
     <header className="absolute inset-x-0 top-0 z-50">
@@ -13,6 +15,7 @@ export default function Header() {
         </nav>
 
         <div>
+          <UserButton />
           <a href="#" className="text-sm font-semibold hover:text-indigo-400">Log in <span aria-hidden="true">→</span></a>
         </div>
       </div>
