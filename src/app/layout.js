@@ -3,6 +3,8 @@ import "./globals.css";
 import { ClerkProvider } from '@clerk/nextjs'
 import { dark, neobrutalism, shadesOfPurple } from '@clerk/themes'
 
+import HeaderVisibility from "./(HomePage)/_components/HeaderVisibility";
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,6 +28,7 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable}  antialiased `}
       >
+        <HeaderVisibility />
         {children}
       </body>
     </html>
