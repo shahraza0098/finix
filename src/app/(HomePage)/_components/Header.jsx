@@ -1,4 +1,5 @@
 // src/components/Header.tsx
+import Link from 'next/link';
 
 import { UserButton } from '@clerk/nextjs'
 export default function Header() {
@@ -8,10 +9,11 @@ export default function Header() {
         <div className="text-xl font-bold">🌐</div>
 
         <nav className="hidden md:flex space-x-8 text-sm font-medium">
-          <a href="#" className="hover:text-indigo-400">About</a>
-          <a href="#" className="hover:text-indigo-400">Features</a>
-          <a href="#" className="hover:text-indigo-400">Marketplace</a>
-          <a href="#" className="hover:text-indigo-400">Company</a>
+          <Link href="/home">Home</Link>
+          <Link href="/about" className='hover:text-indigo-400'>About</Link>
+          <Link href="/features" className='hover:text-indigo-400'>Features</Link>
+          <Link href="/marketplace" className='hover:text-indigo-400'>Marketplace</Link>
+          <Link href="/company" className='hover:text-indigo-400'>Company</Link>
         </nav>
 
         <div>
